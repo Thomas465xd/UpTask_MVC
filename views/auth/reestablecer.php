@@ -1,19 +1,10 @@
-<div class="contenedor login">
+<div class="contenedor reestablecer">
     <?php include_once __DIR__ . '/../templates/nombre-sitio.php'; ?>
 
     <div class="contenedor-sm">
-        <p class="descripcion-pagina">Iniciar Sesión en UpTask</p>
+        <p class="descripcion-pagina">Coloca tu Nuevo Password</p>
 
-        <form action="/" method="POST" class="formulario">
-            <div class="campo">
-                <label for="email">Email</label>
-                <input 
-                    type="email"
-                    id="email"
-                    placeholder="Tu Email"
-                    name="email"
-                >
-            </div>
+        <form action="/reestablecer" method="POST" class="formulario">
             <div class="campo">
                 <label for="password">Password</label>
                 <input 
@@ -24,7 +15,7 @@
                 >
             </div>
 
-            <input type="submit" class="boton" value="Iniciar Sesion">
+            <input type="submit" class="boton" value="Guardar Password">
         </form>
 
         <div class="acciones">

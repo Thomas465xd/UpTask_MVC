@@ -45,3 +45,15 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin textoDegradado($colorUno, $colorDos) {
+    background: linear-gradient(to right, $colorUno 0%, lighten($colorDos, 15%) 100%);
+    color: transparent;
+    background-clip: text;
+    font-size: 7rem;
+    text-align: center;
+
+    @include tablet {
+        font-size: 10rem;
+    }
+}

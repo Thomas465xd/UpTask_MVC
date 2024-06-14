@@ -13,7 +13,7 @@ $router->get('/logout', [LoginController::class, 'logout']);
 
 // Crear Cuenta
 $router->get('/crear', [LoginController::class, 'crear']);
-$router->post('/crear', [LoginController::class, 'login']);
+$router->post('/crear', [LoginController::class, 'crear']);
 
 // Formulario de Recuperar Cuenta
 $router->get('/olvide', [LoginController::class, 'olvide']); 
