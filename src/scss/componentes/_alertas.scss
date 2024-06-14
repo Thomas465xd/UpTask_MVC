@@ -20,4 +20,10 @@
         border-left: .5rem solid v.$verde;
         color: v.$verde;
     }
+
+    &.editar {
+        background-color: lighten(v.$naranja, 60%);
+        border-left: .5rem solid v.$naranja;
+        color: v.$naranja;
+    }
 }
