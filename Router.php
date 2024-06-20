@@ -30,12 +30,21 @@ class Router
         }
 
 
-        if ( $fn ) {
-            // Call user fn va a llamar una función cuando no sabemos cual sera
-            call_user_func($fn, $this); // This es para pasar argumentos
-        } else {
-            echo "Página No Encontrada o Ruta no válida";
+        //if ( $fn ) {
+        //    // Call user fn va a llamar una función cuando no sabemos cual sera
+        //    call_user_func($fn, $this); // This es para pasar argumentos
+        //} else {
+        //    echo "Página No Encontrada o Ruta no válida";
+        //}
+
+        if (!$fn) {
+            http_response_code(404);
+            include_once __DIR__ . '/views/404.php';
+            return;
         }
+
+        // If route is found, call the associated function
+        call_user_func($fn, $this);
     }
 
     public function render($view, $datos = [])

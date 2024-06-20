@@ -7,6 +7,4 @@
         name="proyecto"
         placeholder="Nombre del Proyecto"
     >
-
-    <label for=""></label>
 </div>

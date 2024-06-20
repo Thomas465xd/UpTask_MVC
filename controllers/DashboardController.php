@@ -11,9 +11,14 @@ class DashboardController {
 
         isAuth();
 
+        // Consultar los Proyectos del usuario actual
+        $id = $_SESSION["id"];
+
+        $proyectos = Proyecto::belongsTo("propietarioId", $id);
+
         $router->render('dashboard/index', [
             'titulo' => 'Proyectos', 
-
+            'proyectos' => $proyectos
         ]);
     }
 
