@@ -34,6 +34,7 @@ $router->get('/dashboard', [DashboardController::class, 'index']);
 $router->get('/crear-proyecto', [DashboardController::class, 'crear']);
 $router->post('/crear-proyecto', [DashboardController::class, 'crear']);
 $router->get('/proyecto', [DashboardController::class, 'proyecto']);
+$router->post('/proyecto/eliminar', [DashboardController::class, 'eliminar_proyecto']);
 $router->get('/perfil', [DashboardController::class, 'perfil']);
 
 // API para las Tareas

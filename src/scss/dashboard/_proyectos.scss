@@ -44,5 +44,19 @@
         a {
             color: v.$blanco;
         }
+
+        .btn-eliminar {
+            border: none;
+            background: none;
+            color: v.$blanco;
+            font-size: 3rem;
+            transition: .3s ease all;
+
+            &:hover {
+                color: v.$rojo;
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
     }
 }

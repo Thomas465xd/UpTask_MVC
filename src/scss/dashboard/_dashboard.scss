@@ -37,3 +37,26 @@
         }
     }
 }
+
+/* Estilos Scrollbar */
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Color de fondo normal de la scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: v.$morado; /* Color normal de la scrollbar */
+    border-radius: .5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: darken(v.$morado, 10%); /* Cambio de color al hacer hover */
+}
+
+/* Estilos del borde de la scrollbar (esquina) */
+::-webkit-scrollbar-corner {
+    background-color: v.$grisClaro; /* Color de fondo de la esquina */
+}
